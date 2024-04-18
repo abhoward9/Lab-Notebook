@@ -11,7 +11,7 @@
 
 Recreate the snapshot below by using attribute, descendant, child, and sibling selectors.
 
-<img src="../../_assets/css-exercises/css-ex01-selectors.png" height=200 alt="screenshot of an exercise">
+<img src="../_assets/css-exercises/css-ex01-selectors.png" height=200 alt="screenshot of an exercise">
 
 ## <a id="ex02"></a> Exercise 02 - Pseudo
 
