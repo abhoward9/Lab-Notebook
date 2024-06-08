@@ -1,6 +1,66 @@
-@media (min-width: 1024px) {
+@media (min-width: 901px) {
   body {
     background: var(--green);
     color: var(--white);
   }
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+  body {
+    background: var(--purple);
+    color: var(--white);
+  }
+}
+
+@media (min-width: 1px) and (max-width: 400px) {
+  body {
+    background: var(--orange);
+    color: var(--green);
+  }
+}
+
+@media (min-width: 1px) and (max-width: 600px) {
+  nav ul li {
+    width: 100%;
+  }
+  .main {
+    padding-top: 100px;
+  }
+}
+
+nav {
+  background-color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: var(--green);
+  border-color: brown;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0%;
+  margin: 0;
+}
+
+.main {
+  margin-top: 50px;
+  margin-left: 20px;
 }

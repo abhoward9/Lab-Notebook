@@ -1,9 +1,58 @@
-const url = 'https://anapioficeandfire.com/api/books/';
+const url = "https://anapioficeandfire.com/api/books/";
 
-const app = document.querySelector('#books');
+const app = document.querySelector("#books");
+
+addBookToDOM = (book) => {
+  let element = document.createElement("div");
+  let title = document.createElement("h3");
+  let author = document.createElement("p");
+  let released = document.createElement("p");
+
+  let pages = document.createElement("p");
+  console.log(book.numberOfPages);
+  console.log("can't get pagecount? ");
+
+  title.textContent = book.name;
+  author.textContent = book.authors[0];
+  pages.textContent = book.numberOfPages + " pages";
+  released.textContent = book.released.substring(0, 4);
+  element.append(title);
+  element.append(author);
+  element.append(pages);
+  element.append(released);
+
+  element.style.display = "flex";
+  element.style.flexDirection = "column";
+  element.style.alignItems = "center";
+  element.style.marginTop = "20px";
+  app.append(element);
+};
 
 const fetchData = (url) => {
   // Fetch all books from the API of Ice and Fire and append them to the DOM
   // Create an element for each book that contains title, author, publication year, and number of pages
   // Update the styles in JavaScript to center all the books in the container given
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+
+      data.forEach((book) => {
+        addBookToDOM(book);
+      });
+    })
+
+    .catch((error) => {
+      console.error(error);
+      let element = document.createElement("div");
+      element.textContent = "An error occurred";
+      app.append(element);
+    })
+    .finally(() => {
+      const loader = document.querySelector("#loading");
+
+      app.removeChild(loader);
+    });
 };
+
+fetchData(url);

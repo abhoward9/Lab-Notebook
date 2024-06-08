@@ -9,7 +9,57 @@
   <body>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <h1>Best form ever</h1>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="Name" /><br />
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Password" />
+
+        <div>
+          <fieldset>
+            <legend>User Information</legend>
+            <input
+              type="radio"
+              id="SpongeBob"
+              name="fav_char"
+              value="SpongeBob"
+            />
+            <label for="SpongeBob">SpongeBob</label><br />
+            <input
+              type="radio"
+              id="Squidward"
+              name="fav_char"
+              value="Squidward"
+            />
+            <label for="Squidward">Squidward</label><br />
+            <input type="radio" id="Patrick" name="fav_char" value="Patrick" />
+            <label for="Patrick">Patrick</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Why is SpongeBob the best show? (choose all that apply)
+            </legend>
+            <input type="checkbox" id="voices" name="reasons" value="voices" />
+            <label for="voices">Best voice acting</label><br />
+            <input
+              type="checkbox"
+              id="animation"
+              name="reasons"
+              value="animation"
+            />
+            <label for="animation">Best animation and art</label><br />
+            <input
+              type="checkbox"
+              id="writing"
+              name="reasons"
+              value="writing"
+            />
+            <label for="writing">Great writing</label><br />
+          </fieldset>
+        </div>
+
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset" />
       </form>
     </main>
   </body>

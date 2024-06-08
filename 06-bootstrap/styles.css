@@ -1,6 +1,7 @@
-h1 {
+/* h1 {
   text-align: center;
-}
+  color: green;
+} */
 
 form {
   width: 600px;
@@ -20,4 +21,8 @@ form > * {
 
 .box {
   height: 160px;
+}
+
+.grid-container {
+  background-color: rgb(45, 171, 129); /* Set your desired background color */
 }
