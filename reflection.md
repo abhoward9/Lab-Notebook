@@ -37,14 +37,6 @@ I had to follow the videos closely for this one, and honestly looking back on it
 
 ### Bootstrap
 
-Were you able to complete the exercises on your own or did you use the
-videos or the solutions for help?
-❏ How helpful did you find the exercises in this section? Was there one
-exercise that was particularly helpful?
-❏ Was there something that you wish had been explained better?
-❏ Were there other exercises that might have helped you learn this week’s
-topic a little better?
-
 I found the grid to be fairly intuitive, although given that humans tend to be more comfortable when working with things that are divisible by 10 I was initially a bit confounded as to why the grid was divided into 12 columns. As of writing this I cannot remember if this was mentioned in the videos, but when I researched why bootstrap went with 12 columns, the fact that 12 is easily divisible by several different factors (2,3,4,6) really made it clear why they went with that.
 I also find it somewhat fascinating that something like bootstrap offers so much for absolutely no cost. While I can't think of anything that would have helped me learn this topic better, I am curious to know what else is out there as alternatives to bootstrap and why I might pick those over boostrap or vice versa.
 
